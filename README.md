@@ -1,6 +1,24 @@
 # Usb Analysis
-This README.md will contain instructions on how to setup, use and interact with this
-project/tools.
+This project was part of a research internship at Technical University of Munich. The
+goal was to benchmark the inference of ML models by Google's `Coral USB Accelerator`.
+The comparison was done to regular CPU processing and contained an analysis
+of the USB protocol/traffic that occurs when delegating the inference of the test models
+onto the *USB Accelerator*. 
+
+This was done by scripting the automation, inference, measuring and usb traffic analysis
+with Python, the [pyshark](https://github.com/duclos-cavalcanti/Coral-USB-Accelerator/wiki) and 
+the [tensorflow](https://www.tensorflow.org/) libraries. A Wiki can be found [here](https://github.com/duclos-cavalcanti/Coral-USB-Accelerator/wiki) with a more in depth explanation of the project.
+
+<p align="center">
+<img src=".imgs/coral.jpeg" alt="Drawing" style="width: 350px;"/>
+</p>
+
+
+
+# Tools
+- Docker
+- Wireshark / [Pyshark](http://kiminewt.github.io/pyshark/)
+- Coral USB Accelerator
 
 # Docker and Wireshark
 ## Dependencies
